@@ -21,6 +21,9 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
         rel="stylesheet" />
 
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <script id="tailwind-config">
         tailwind.config = {
             theme: {
@@ -262,113 +265,171 @@
             </a>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Product Card 1 -->
-            <div
-                class="bg-white rounded-2xl overflow-hidden shadow-soft hover:shadow-hover transition-all group border border-gray-100 flex flex-col h-full">
-                <div class="relative h-64 overflow-hidden">
-                    <div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500"
-                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAIyfX5V0XobeMrAdDPMz2nx6naI8YbXGmhVDd5oCTo4za6Ut4EMF4T-V7OJGvYpUFLYj66TbKroY1Ks-gWdk7AJzFS5RYcRpyMR7Al-GQx9HYehIai44gaIEZ8DPtYVjAChw6Tgz4gXacxBeE-bsPv2sFH587ew6DskqD5WFzZ3CZioaIvGBs0BD0K-jtZbg6JWwIrTB6dmVhD1GH1VxQdrfX4JNBT4NExgMDl9sw6XQ57iGKyr93p3lIcl9II-lht252IN3pZubk')">
-                    </div>
+        <div class="swiper popular-swiper">
+            <div class="swiper-wrapper">
+                <!-- Product Card 1 -->
+                <div class="swiper-slide h-auto">
                     <div
-                        class="absolute top-4 right-4 bg-brand-yellow text-brand-dark px-3 py-1 rounded-lg text-xs font-bold uppercase shadow-sm">
-                        Top Rated</div>
-                </div>
-                <div class="p-6 flex-1 flex flex-col">
-                    <div class="flex items-center gap-2 text-xs text-text-light mb-3 font-medium">
-                        <span class="flex items-center gap-1"><span
-                                class="material-symbols-rounded text-brand-green">schedule</span> 7 Days</span>
-                        <span class="w-1 h-1 rounded-full bg-gray-300"></span>
-                        <span class="flex items-center gap-1"><span
-                                class="material-symbols-rounded text-brand-green">hiking</span> Lemosho Route</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-brand-dark mb-3">Kilimanjaro Climbing</h3>
-                    <p class="text-sm text-text-light mb-6 line-clamp-2">The most scenic route to the Roof of Africa.
-                        High success rate with excellent acclimatization profile.</p>
-
-                    <div class="mt-auto pt-6 border-t border-gray-100 flex items-center justify-between">
-                        <div>
-                            <span class="text-xs text-text-light block">From</span>
-                            <span class="text-xl font-bold text-brand-dark">$2,450</span>
+                        class="bg-white rounded-2xl overflow-hidden shadow-soft hover:shadow-hover transition-all group border border-gray-100 flex flex-col h-full">
+                        <div class="relative h-64 overflow-hidden">
+                            <div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500"
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAIyfX5V0XobeMrAdDPMz2nx6naI8YbXGmhVDd5oCTo4za6Ut4EMF4T-V7OJGvYpUFLYj66TbKroY1Ks-gWdk7AJzFS5RYcRpyMR7Al-GQx9HYehIai44gaIEZ8DPtYVjAChw6Tgz4gXacxBeE-bsPv2sFH587ew6DskqD5WFzZ3CZioaIvGBs0BD0K-jtZbg6JWwIrTB6dmVhD1GH1VxQdrfX4JNBT4NExgMDl9sw6XQ57iGKyr93p3lIcl9II-lht252IN3pZubk')">
+                            </div>
+                            <div
+                                class="absolute top-4 right-4 bg-brand-yellow text-brand-dark px-3 py-1 rounded-lg text-xs font-bold uppercase shadow-sm">
+                                Top Rated</div>
                         </div>
-                        <button
-                            class="bg-brand-gray text-brand-dark size-10 rounded-full flex items-center justify-center hover:bg-brand-yellow transition-colors font-bold">
-                            <span class="material-symbols-rounded">arrow_forward</span>
-                        </button>
+                        <div class="p-6 flex-1 flex flex-col">
+                            <div class="flex items-center gap-2 text-xs text-text-light mb-3 font-medium">
+                                <span class="flex items-center gap-1"><span
+                                        class="material-symbols-rounded text-brand-green">schedule</span> 7 Days</span>
+                                <span class="w-1 h-1 rounded-full bg-gray-300"></span>
+                                <span class="flex items-center gap-1"><span
+                                        class="material-symbols-rounded text-brand-green">hiking</span> Lemosho
+                                    Route</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-brand-dark mb-3">Kilimanjaro Climbing</h3>
+                            <p class="text-sm text-text-light mb-6 line-clamp-2">The most scenic route to the Roof of
+                                Africa.
+                                High success rate with excellent acclimatization profile.</p>
+
+                            <div class="mt-auto pt-6 border-t border-gray-100 flex items-center justify-between">
+                                <div>
+                                    <span class="text-xs text-text-light block">From</span>
+                                    <span class="text-xl font-bold text-brand-dark">$2,450</span>
+                                </div>
+                                <button
+                                    class="bg-brand-gray text-brand-dark size-10 rounded-full flex items-center justify-center hover:bg-brand-yellow transition-colors font-bold">
+                                    <span class="material-symbols-rounded">arrow_forward</span>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Product Card 2 -->
-            <div
-                class="bg-white rounded-2xl overflow-hidden shadow-soft hover:shadow-hover transition-all group border border-gray-100 flex flex-col h-full">
-                <div class="relative h-64 overflow-hidden">
-                    <div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500"
-                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBZeC6d_Wjv89yhXbCk1TP5BtpsrHMmYg_nMSotaoSuUZ4xOaffospeZWUVEoIaShYD4Ns8eiXJMUhyxLOlFPwsPdufga14GmJUf-6bOBzVLSJMYbNUFexRVAP5Ib_dcr6vvzRTZuRlvsfM994eEOrBaEWisFvwOhWRFNZDNAcG3grTO94GcQgbednwL6WXgA6b8867A5TEW0Mw9el1dLz-mEXVILLcm1ojIO3n7T4-IHPFQp6Q-heqtURsE1YWLf-LDtLKrh5UkiU')">
-                    </div>
+                <!-- Product Card 2 -->
+                <div class="swiper-slide h-auto">
                     <div
-                        class="absolute top-4 right-4 bg-brand-green text-white px-3 py-1 rounded-lg text-xs font-bold uppercase shadow-sm">
-                        Best Value</div>
-                </div>
-                <div class="p-6 flex-1 flex flex-col">
-                    <div class="flex items-center gap-2 text-xs text-text-light mb-3 font-medium">
-                        <span class="flex items-center gap-1"><span
-                                class="material-symbols-rounded text-brand-green">schedule</span> 6 Days</span>
-                        <span class="w-1 h-1 rounded-full bg-gray-300"></span>
-                        <span class="flex items-center gap-1"><span
-                                class="material-symbols-rounded text-brand-green">landscape</span> Serengeti &
-                            Ngorongoro</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-brand-dark mb-3">Tanzania Highlights</h3>
-                    <p class="text-sm text-text-light mb-6 line-clamp-2">A perfect introduction to Tanzania's wildlife.
-                        Visit Tarangire, Serengeti, and the Ngorongoro Crater.</p>
-
-                    <div class="mt-auto pt-6 border-t border-gray-100 flex items-center justify-between">
-                        <div>
-                            <span class="text-xs text-text-light block">From</span>
-                            <span class="text-xl font-bold text-brand-dark">$1,890</span>
+                        class="bg-white rounded-2xl overflow-hidden shadow-soft hover:shadow-hover transition-all group border border-gray-100 flex flex-col h-full">
+                        <div class="relative h-64 overflow-hidden">
+                            <div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500"
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBZeC6d_Wjv89yhXbCk1TP5BtpsrHMmYg_nMSotaoSuUZ4xOaffospeZWUVEoIaShYD4Ns8eiXJMUhyxLOlFPwsPdufga14GmJUf-6bOBzVLSJMYbNUFexRVAP5Ib_dcr6vvzRTZuRlvsfM994eEOrBaEWisFvwOhWRFNZDNAcG3grTO94GcQgbednwL6WXgA6b8867A5TEW0Mw9el1dLz-mEXVILLcm1ojIO3n7T4-IHPFQp6Q-heqtURsE1YWLf-LDtLKrh5UkiU')">
+                            </div>
+                            <div
+                                class="absolute top-4 right-4 bg-brand-green text-white px-3 py-1 rounded-lg text-xs font-bold uppercase shadow-sm">
+                                Best Value</div>
                         </div>
-                        <button
-                            class="bg-brand-gray text-brand-dark size-10 rounded-full flex items-center justify-center hover:bg-brand-yellow transition-colors font-bold">
-                            <span class="material-symbols-rounded">arrow_forward</span>
-                        </button>
+                        <div class="p-6 flex-1 flex flex-col">
+                            <div class="flex items-center gap-2 text-xs text-text-light mb-3 font-medium">
+                                <span class="flex items-center gap-1"><span
+                                        class="material-symbols-rounded text-brand-green">schedule</span> 6 Days</span>
+                                <span class="w-1 h-1 rounded-full bg-gray-300"></span>
+                                <span class="flex items-center gap-1"><span
+                                        class="material-symbols-rounded text-brand-green">landscape</span> Serengeti &
+                                    Ngorongoro</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-brand-dark mb-3">Tanzania Highlights</h3>
+                            <p class="text-sm text-text-light mb-6 line-clamp-2">A perfect introduction to Tanzania's
+                                wildlife.
+                                Visit Tarangire, Serengeti, and the Ngorongoro Crater.</p>
+
+                            <div class="mt-auto pt-6 border-t border-gray-100 flex items-center justify-between">
+                                <div>
+                                    <span class="text-xs text-text-light block">From</span>
+                                    <span class="text-xl font-bold text-brand-dark">$1,890</span>
+                                </div>
+                                <button
+                                    class="bg-brand-gray text-brand-dark size-10 rounded-full flex items-center justify-center hover:bg-brand-yellow transition-colors font-bold">
+                                    <span class="material-symbols-rounded">arrow_forward</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="swiper-slide h-auto">
+                    <div
+                        class="bg-white rounded-2xl overflow-hidden shadow-soft hover:shadow-hover transition-all group border border-gray-100 flex flex-col h-full">
+                        <div class="relative h-64 overflow-hidden">
+                            <div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500"
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDL1ziTwLP2Ao-R0XXlbV2_BhqkZvbDw4bRlBjUxBC8CZD5ul6kk32CbRX7ocs-yZ6YfXctXxLX24806Nf04BYBespAGAhie_QrsQNjnWCYxlQtwK1P7W1r7XM8i9UwYZGr6M3tAIkeNNL-q_6271W3WbA-JzdzWhd0zFJMYSm-0pPjKRS3x6Tx2rdQz-UT_NejwyHaDOnYhLsxjpJPfNU-V9l0VN1yoIKH722Ka8px8NzdBQHNYhSLWvTrAhw6l-vfvjKVyMKGspg')">
+                            </div>
+                            <div
+                                class="absolute top-4 right-4 bg-brand-yellow text-brand-dark px-3 py-1 rounded-lg text-xs font-bold uppercase shadow-sm">
+                                Most Relaxing</div>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col">
+                            <div class="flex items-center gap-2 text-xs text-text-light mb-3 font-medium">
+                                <span class="flex items-center gap-1"><span
+                                        class="material-symbols-rounded text-brand-green">schedule</span> 10
+                                    Days</span>
+                                <span class="w-1 h-1 rounded-full bg-gray-300"></span>
+                                <span class="flex items-center gap-1"><span
+                                        class="material-symbols-rounded text-brand-green">beach_access</span> Safari &
+                                    Beach</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-brand-dark mb-3">Bush to Beach</h3>
+                            <p class="text-sm text-text-light mb-6 line-clamp-2">The ultimate combination. Thrilling
+                                game drives
+                                followed by relaxation on Zanzibar's white sands.</p>
+
+                            <div class="mt-auto pt-6 border-t border-gray-100 flex items-center justify-between">
+                                <div>
+                                    <span class="text-xs text-text-light block">From</span>
+                                    <span class="text-xl font-bold text-brand-dark">$3,200</span>
+                                </div>
+                                <button
+                                    class="bg-brand-gray text-brand-dark size-10 rounded-full flex items-center justify-center hover:bg-brand-yellow transition-colors font-bold">
+                                    <span class="material-symbols-rounded">arrow_forward</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 (New for Carousel depth) -->
+                <div class="swiper-slide h-auto">
+                    <div
+                        class="bg-white rounded-2xl overflow-hidden shadow-soft hover:shadow-hover transition-all group border border-gray-100 flex flex-col h-full">
+                        <div class="relative h-64 overflow-hidden">
+                            <div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500"
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDZRbRHoNBQPJ-GdhK4XYeV8bpzF7tgeLuB6oU5YyZtgxA3xGTng-sLEtmusaRdbfrT1v85XEZayGX70_cMc4ippgwVfTXz0wPeVmWGzw8mzF3GLTeEVgitnXtHQtXsDXQ-vh5lc1BNhv_y6kUempYp5suhi6DH8OXg8xsHmMVW71taedBWUbR8xlVY3yIZgQrCctpOrBQIwWIgGu8o5A55KRz4IcDol0R85iCZoKYsrni7RQkYuJRN10X5JNRlR3kSiAMY1vrTai0')">
+                            </div>
+                            <div
+                                class="absolute top-4 right-4 bg-brand-yellow text-brand-dark px-3 py-1 rounded-lg text-xs font-bold uppercase shadow-sm">
+                                Hardcore</div>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col">
+                            <div class="flex items-center gap-2 text-xs text-text-light mb-3 font-medium">
+                                <span class="flex items-center gap-1"><span
+                                        class="material-symbols-rounded text-brand-green">schedule</span> 8 Days</span>
+                                <span class="w-1 h-1 rounded-full bg-gray-300"></span>
+                                <span class="flex items-center gap-1"><span
+                                        class="material-symbols-rounded text-brand-green">hiking</span> Machame
+                                    Route</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-brand-dark mb-3">Machame Whiskey Route</h3>
+                            <p class="text-sm text-text-light mb-6 line-clamp-2">A steep and adventurous climb for
+                                those seeking a challenge with rewarding views.</p>
+
+                            <div class="mt-auto pt-6 border-t border-gray-100 flex items-center justify-between">
+                                <div>
+                                    <span class="text-xs text-text-light block">From</span>
+                                    <span class="text-xl font-bold text-brand-dark">$2,200</span>
+                                </div>
+                                <button
+                                    class="bg-brand-gray text-brand-dark size-10 rounded-full flex items-center justify-center hover:bg-brand-yellow transition-colors font-bold">
+                                    <span class="material-symbols-rounded">arrow_forward</span>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Product Card 3 -->
-            <div
-                class="bg-white rounded-2xl overflow-hidden shadow-soft hover:shadow-hover transition-all group border border-gray-100 flex flex-col h-full">
-                <div class="relative h-64 overflow-hidden">
-                    <div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500"
-                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDL1ziTwLP2Ao-R0XXlbV2_BhqkZvbDw4bRlBjUxBC8CZD5ul6kk32CbRX7ocs-yZ6YfXctXxLX24806Nf04BYBespAGAhie_QrsQNjnWCYxlQtwK1P7W1r7XM8i9UwYZGr6M3tAIkeNNL-q_6271W3WbA-JzdzWhd0zFJMYSm-0pPjKRS3x6Tx2rdQz-UT_NejwyHaDOnYhLsxjpJPfNU-V9l0VN1yoIKH722Ka8px8NzdBQHNYhSLWvTrAhw6l-vfvjKVyMKGspg')">
-                    </div>
-                </div>
-                <div class="p-6 flex-1 flex flex-col">
-                    <div class="flex items-center gap-2 text-xs text-text-light mb-3 font-medium">
-                        <span class="flex items-center gap-1"><span
-                                class="material-symbols-rounded text-brand-green">schedule</span> 10 Days</span>
-                        <span class="w-1 h-1 rounded-full bg-gray-300"></span>
-                        <span class="flex items-center gap-1"><span
-                                class="material-symbols-rounded text-brand-green">beach_access</span> Safari &
-                            Beach</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-brand-dark mb-3">Bush to Beach</h3>
-                    <p class="text-sm text-text-light mb-6 line-clamp-2">The ultimate combination. Thrilling game drives
-                        followed by relaxation on Zanzibar's white sands.</p>
-
-                    <div class="mt-auto pt-6 border-t border-gray-100 flex items-center justify-between">
-                        <div>
-                            <span class="text-xs text-text-light block">From</span>
-                            <span class="text-xl font-bold text-brand-dark">$3,200</span>
-                        </div>
-                        <button
-                            class="bg-brand-gray text-brand-dark size-10 rounded-full flex items-center justify-center hover:bg-brand-yellow transition-colors font-bold">
-                            <span class="material-symbols-rounded">arrow_forward</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
+            <!-- Swiper Pagination -->
+            <div class="swiper-pagination !-bottom-12"></div>
+        </div>
         </div>
     </section>
 
@@ -1242,6 +1303,33 @@
             </div>
         </div>
     </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Swiper Init -->
+    <script>
+        const swiper = new Swiper('.popular-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+    </script>
 </body>
 
 </html>
