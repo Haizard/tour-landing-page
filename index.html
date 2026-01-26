@@ -1465,32 +1465,35 @@
             },
         });
 
-        // Timeline Swiper
+        // Timeline Swiper (A Day in the Life)
         const swiperTimeline = new Swiper('.timeline-swiper', {
             slidesPerView: 'auto',
             spaceBetween: 30,
             centeredSlides: false,
             grabCursor: true,
+            loop: true,
+            autoplay: {
+                delay: 30000,
+                disableOnInteraction: false,
+            },
             pagination: {
                 el: '.timeline-pagination',
                 clickable: true,
             },
         });
 
-        // Social Gallery Swiper
+        // Social Gallery Swiper (Snapshots from the Wild)
         const swiperGallery = new Swiper('.gallery-swiper', {
             slidesPerView: 'auto',
             spaceBetween: 20,
             loop: true,
             autoplay: {
-                delay: 2000,
+                delay: 30000,
                 disableOnInteraction: false,
             },
-            freeMode: true,
-            speed: 5000, // Smooth continuous slide
-            autoplay: {
-                delay: 0,
-                disableOnInteraction: false,
+            pagination: {
+                el: '.gallery-pagination',
+                clickable: true,
             },
         });
 
@@ -1498,6 +1501,11 @@
         const swiperGuides = new Swiper('.guides-swiper', {
             slidesPerView: 1,
             spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 30000,
+                disableOnInteraction: false,
+            },
             pagination: {
                 el: '.guides-pagination',
                 clickable: true,
