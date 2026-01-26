@@ -1386,7 +1386,8 @@
             offset: 100
         });
 
-        const swiper = new Swiper('.popular-swiper', {
+        // Init Popular Adventures Swiper
+        const swiperPopular = new Swiper('.popular-swiper', {
             slidesPerView: 1,
             spaceBetween: 30,
             loop: true,
@@ -1405,8 +1406,10 @@
                 1024: {
                     slidesPerView: 3,
                 },
-            });
+            },
+        });
 
+        // Init Testimonials Swiper
         const swiperTestimonials = new Swiper('.testimonials-swiper', {
             slidesPerView: 1,
             spaceBetween: 30,
