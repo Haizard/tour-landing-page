@@ -16,6 +16,9 @@
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <!-- Icons -->
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -82,69 +85,91 @@
     <section
         class="relative h-screen min-h-[700px] flex items-center justify-center text-center text-white overflow-hidden">
         <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&q=80&w=2000"
-            class="absolute inset-0 w-full h-full object-cover" alt="Safari Hero">
+            class="absolute inset-0 w-full h-full object-cover scale-105" alt="Sereland Hero">
         <div class="absolute inset-0 hero-gradient"></div>
 
-        <div class="relative z-10 max-w-4xl px-6">
-            <h1 class="text-5xl md:text-8xl font-serif italic mb-6">Tanzania Luxury Safari and Climbing Kilimanjaro</h1>
-            <p class="text-lg md:text-xl font-light tracking-widest uppercase mb-10">Real Life, Real People, Real Africa
-            </p>
+        <div class="relative z-10 max-w-5xl px-6">
+            <h1 class="text-5xl md:text-8xl font-serif italic mb-6 leading-tight">Venture into the Soul of the Untamed
+            </h1>
+            <p class="text-lg md:text-xl font-light tracking-[0.3em] uppercase mb-12">Pure Essence • Timeless Elegance •
+                Primal Grace</p>
             <div class="flex justify-center gap-6">
                 <button
-                    class="border border-white px-8 py-3 uppercase text-xs font-bold tracking-widest hover:bg-white hover:text-sereland-dark transition-all">Explore
-                    More</button>
+                    class="bg-sereland-brown px-10 py-4 uppercase text-xs font-bold tracking-widest hover:bg-sereland-brown-dark transition-all">Begin
+                    Your Odyssey</button>
             </div>
         </div>
     </section>
 
     <!-- Intro Section -->
-    <section class="py-24 px-6 text-center max-w-4xl mx-auto">
-        <p class="text-base leading-relaxed text-gray-600 mb-8 italic">
-            At Sereland Africa Safaris, we are dedicated to making unforgettable journeys that reveal the true essence
-            of Tanzania's natural beauty and vibrant cultures. Our team is a blend of passionate professionals who
-            thrive on delivering exceptional experiences to travelers seeking the wonders of Africa.
+    <section class="py-32 px-6 text-center max-w-5xl mx-auto">
+        <p class="text-xl md:text-2xl font-serif italic text-gray-700 leading-relaxed mb-12">
+            "At Sereland Africa Safaris, we don't just guide; we curate portals to the earth's most profound spectacles.
+            Our mission is to bridge the gap between modern luxury and the raw, unscripted beauty of the Tanzanian
+            wilderness, ensuring every heartbeat of your journey resonates with the rhythm of the wild."
         </p>
+        <div class="h-px w-24 bg-sereland-brown mx-auto"></div>
     </section>
 
     <!-- Tour Types -->
-    <section class="pb-24 px-6 max-w-7xl mx-auto">
+    <section class="pb-24 px-6 max-w-7xl mx-auto relative group">
         <div class="text-center mb-16">
-            <h2 class="text-4xl font-serif mb-4 luxury-line">Tour Types</h2>
-            <p class="text-sm text-gray-500 uppercase tracking-widest">Tailored to your interests</p>
+            <h2 class="text-4xl font-serif mb-4 luxury-line">Expedition Categories</h2>
+            <p class="text-sm text-gray-500 uppercase tracking-widest">Discover your perfect wilderness experience</p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            <!-- Type 1 -->
-            <div class="relative group h-[450px] overflow-hidden cursor-pointer">
-                <img src="https://images.unsplash.com/photo-1493246507139-91e0fad9978e?auto=format&fit=crop&q=80&w=1000"
-                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                <div class="absolute inset-0 bg-black/40 flex items-end p-8">
-                    <h3 class="text-white text-2xl font-serif italic">Zanzibar</h3>
+
+        <div class="swiper types-swiper">
+            <div class="swiper-wrapper">
+                <!-- Type 1 -->
+                <div class="swiper-slide h-auto">
+                    <div class="relative group/card h-[450px] overflow-hidden cursor-pointer rounded-lg">
+                        <img src="https://images.unsplash.com/photo-1544198365-f5d60b6d8190?auto=format&fit=crop&q=80&w=1000"
+                            class="w-full h-full object-cover group-hover/card:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-black/40 flex items-end p-8">
+                            <h3 class="text-white text-2xl font-serif italic">Coastal Escapes</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Type 2 -->
+                <div class="swiper-slide h-auto">
+                    <div class="relative group/card h-[450px] overflow-hidden cursor-pointer rounded-lg">
+                        <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&q=80&w=1000"
+                            class="w-full h-full object-cover group-hover/card:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-black/40 flex items-end p-8">
+                            <h3 class="text-white text-2xl font-serif italic">Primal Treks</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Type 3 -->
+                <div class="swiper-slide h-auto">
+                    <div class="relative group/card h-[450px] overflow-hidden cursor-pointer rounded-lg">
+                        <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&q=80&w=1000"
+                            class="w-full h-full object-cover group-hover/card:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-black/40 flex items-end p-8">
+                            <h3 class="text-white text-2xl font-serif italic">Wild Herd Migration</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Type 4 -->
+                <div class="swiper-slide h-auto">
+                    <div class="relative group/card h-[450px] overflow-hidden cursor-pointer rounded-lg">
+                        <img src="https://images.unsplash.com/photo-1523805081730-6144493728d4?auto=format&fit=crop&q=80&w=1000"
+                            class="w-full h-full object-cover group-hover/card:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-black/40 flex items-end p-8">
+                            <h3 class="text-white text-2xl font-serif italic">Ethereal Horizons</h3>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- Type 2 -->
-            <div class="relative group h-[450px] overflow-hidden cursor-pointer">
-                <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&q=80&w=1000"
-                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                <div class="absolute inset-0 bg-black/40 flex items-end p-8">
-                    <h3 class="text-white text-2xl font-serif italic">Walking Safari</h3>
-                </div>
-            </div>
-            <!-- Type 3 -->
-            <div class="relative group h-[450px] overflow-hidden cursor-pointer">
-                <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&q=80&w=1000"
-                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                <div class="absolute inset-0 bg-black/40 flex items-end p-8">
-                    <h3 class="text-white text-2xl font-serif italic">The Great Migration</h3>
-                </div>
-            </div>
-            <!-- Type 4 -->
-            <div class="relative group h-[450px] overflow-hidden cursor-pointer">
-                <img src="https://images.unsplash.com/photo-1523805081730-6144493728d4?auto=format&fit=crop&q=80&w=1000"
-                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                <div class="absolute inset-0 bg-black/40 flex items-end p-8">
-                    <h3 class="text-white text-2xl font-serif italic">Balloon Over Serengeti</h3>
-                </div>
-            </div>
+            <!-- Navigation -->
+            <button
+                class="types-prev absolute top-1/2 -left-4 z-20 size-12 bg-white rounded-full flex items-center justify-center shadow-lg text-sereland-brown hover:bg-sereland-brown hover:text-white transition-colors -translate-y-1/2 opacity-0 group-hover:opacity-100">
+                <span class="material-symbols-rounded">chevron_left</span>
+            </button>
+            <button
+                class="types-next absolute top-1/2 -right-4 z-20 size-12 bg-white rounded-full flex items-center justify-center shadow-lg text-sereland-brown hover:bg-sereland-brown hover:text-white transition-colors -translate-y-1/2 opacity-0 group-hover:opacity-100">
+                <span class="material-symbols-rounded">chevron_right</span>
+            </button>
         </div>
     </section>
 
@@ -152,78 +177,89 @@
     <section class="py-24 bg-white px-6">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-serif mb-4 luxury-line">Featured Safari Packages</h2>
-                <p class="text-gray-500 max-w-2xl mx-auto">Step into the realm of timeless adventure and unparalleled
-                    beauty with a classic safari journey.</p>
+                <h2 class="text-4xl font-serif mb-4 luxury-line">Signature Curations</h2>
+                <p class="text-gray-500 max-w-2xl mx-auto">Immerse yourself in the sanctuary of the wild with our
+                    hand-picked collection of prestige safaris.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Package 1 -->
-                <div
-                    class="group border border-gray-100 bg-sereland-light p-4 shadow-sm hover:shadow-md transition-shadow">
-                    <div class="aspect-[4/3] overflow-hidden mb-6">
-                        <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&q=80&w=800"
-                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="px-2 pb-4">
-                        <h3 class="text-xl font-serif mb-4">4 Day Luxury Safari: Ngorongoro, Manyara & Tarangire</h3>
+            <div class="swiper packages-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Package 1 -->
+                    <div class="swiper-slide h-auto">
                         <div
-                            class="flex justify-between items-center text-xs font-bold uppercase tracking-widest text-sereland-brown mb-6">
-                            <span>4 Days</span>
-                            <span>From $2,870 <span class="text-[10px] text-gray-400">/person</span></span>
+                            class="group border border-gray-100 bg-sereland-light p-4 shadow-sm hover:shadow-md transition-shadow h-full">
+                            <div class="aspect-[4/3] overflow-hidden mb-6 rounded-sm">
+                                <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&q=80&w=800"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <div class="px-2 pb-4">
+                                <h3 class="text-xl font-serif mb-4">Sovereign Plains Expedition</h3>
+                                <div
+                                    class="flex justify-between items-center text-xs font-bold uppercase tracking-widest text-sereland-brown mb-6">
+                                    <span>5 Days</span>
+                                    <span>From $3,120 <span class="text-[10px] text-gray-400">/person</span></span>
+                                </div>
+                                <p class="text-sm text-gray-500 leading-relaxed mb-8">A deep immersion into the velvet
+                                    grasslands where the predators roam free under the golden sun.</p>
+                                <button
+                                    class="text-xs font-black uppercase tracking-[0.2em] text-sereland-brown group-hover:text-sereland-brown-dark flex items-center gap-2">
+                                    Explore Itinerary <span
+                                        class="material-symbols-rounded text-sm">arrow_forward</span>
+                                </button>
+                            </div>
                         </div>
-                        <p class="text-sm text-gray-500 leading-relaxed mb-8">Embark on an unforgettable journey through
-                            Tanzania's most iconic safari destinations.</p>
-                        <button
-                            class="text-xs font-black uppercase tracking-[0.2em] text-sereland-brown group-hover:text-sereland-brown-dark flex items-center gap-2">
-                            Read More <span class="material-symbols-rounded text-sm">arrow_forward</span>
-                        </button>
                     </div>
-                </div>
 
-                <!-- Package 2 -->
-                <div
-                    class="group border border-gray-100 bg-sereland-light p-4 shadow-sm hover:shadow-md transition-shadow">
-                    <div class="aspect-[4/3] overflow-hidden mb-6">
-                        <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&q=80&w=800"
-                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="px-2 pb-4">
-                        <h3 class="text-xl font-serif mb-4">6-Day Fly Luxury Safari: Serengeti Experience</h3>
+                    <!-- Package 2 -->
+                    <div class="swiper-slide h-auto">
                         <div
-                            class="flex justify-between items-center text-xs font-bold uppercase tracking-widest text-sereland-brown mb-6">
-                            <span>6 Days</span>
-                            <span>From $4,450 <span class="text-[10px] text-gray-400">/person</span></span>
+                            class="group border border-gray-100 bg-sereland-light p-4 shadow-sm hover:shadow-md transition-shadow h-full">
+                            <div class="aspect-[4/3] overflow-hidden mb-6 rounded-sm">
+                                <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&q=80&w=800"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <div class="px-2 pb-4">
+                                <h3 class="text-xl font-serif mb-4">Aerial Serengeti Voyage</h3>
+                                <div
+                                    class="flex justify-between items-center text-xs font-bold uppercase tracking-widest text-sereland-brown mb-6">
+                                    <span>7 Days</span>
+                                    <span>From $4,890 <span class="text-[10px] text-gray-400">/person</span></span>
+                                </div>
+                                <p class="text-sm text-gray-500 leading-relaxed mb-8">Witness the majesty of the
+                                    Savannah from above, combined with intimate luxury camp stays.</p>
+                                <button
+                                    class="text-xs font-black uppercase tracking-[0.2em] text-sereland-brown group-hover:text-sereland-brown-dark flex items-center gap-2">
+                                    Explore Itinerary <span
+                                        class="material-symbols-rounded text-sm">arrow_forward</span>
+                                </button>
+                            </div>
                         </div>
-                        <p class="text-sm text-gray-500 leading-relaxed mb-8">A fly-in safari that allows more time for
-                            exploration and relaxation in the wild Serengeti.</p>
-                        <button
-                            class="text-xs font-black uppercase tracking-[0.2em] text-sereland-brown group-hover:text-sereland-brown-dark flex items-center gap-2">
-                            Read More <span class="material-symbols-rounded text-sm">arrow_forward</span>
-                        </button>
                     </div>
-                </div>
 
-                <!-- Package 3 -->
-                <div
-                    class="group border border-gray-100 bg-sereland-light p-4 shadow-sm hover:shadow-md transition-shadow">
-                    <div class="aspect-[4/3] overflow-hidden mb-6">
-                        <img src="https://images.unsplash.com/photo-1493246507139-91e0fad9978e?auto=format&fit=crop&q=80&w=800"
-                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="px-2 pb-4">
-                        <h3 class="text-xl font-serif mb-4">8 Day Tanzania Adventure & Zanzibar Relaxation</h3>
+                    <!-- Package 3 -->
+                    <div class="swiper-slide h-auto">
                         <div
-                            class="flex justify-between items-center text-xs font-bold uppercase tracking-widest text-sereland-brown mb-6">
-                            <span>8 Days</span>
-                            <span>From $3,650 <span class="text-[10px] text-gray-400">/person</span></span>
+                            class="group border border-gray-100 bg-sereland-light p-4 shadow-sm hover:shadow-md transition-shadow h-full">
+                            <div class="aspect-[4/3] overflow-hidden mb-6 rounded-sm">
+                                <img src="https://images.unsplash.com/photo-1493246507139-91e0fad9978e?auto=format&fit=crop&q=80&w=800"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <div class="px-2 pb-4">
+                                <h3 class="text-xl font-serif mb-4">Equatorial Zenith & Tide</h3>
+                                <div
+                                    class="flex justify-between items-center text-xs font-bold uppercase tracking-widest text-sereland-brown mb-6">
+                                    <span>10 Days</span>
+                                    <span>From $4,200 <span class="text-[10px] text-gray-400">/person</span></span>
+                                </div>
+                                <p class="text-sm text-gray-500 leading-relaxed mb-8">From the frost-tipped peaks of the
+                                    North to the sapphire waters of the Indian Ocean.</p>
+                                <button
+                                    class="text-xs font-black uppercase tracking-[0.2em] text-sereland-brown group-hover:text-sereland-brown-dark flex items-center gap-2">
+                                    Explore Itinerary <span
+                                        class="material-symbols-rounded text-sm">arrow_forward</span>
+                                </button>
+                            </div>
                         </div>
-                        <p class="text-sm text-gray-500 leading-relaxed mb-8">The ultimate combination of a thrilling
-                            wildlife safari and beach relaxation in Zanzibar.</p>
-                        <button
-                            class="text-xs font-black uppercase tracking-[0.2em] text-sereland-brown group-hover:text-sereland-brown-dark flex items-center gap-2">
-                            Read More <span class="material-symbols-rounded text-sm">arrow_forward</span>
-                        </button>
                     </div>
                 </div>
             </div>
@@ -231,7 +267,7 @@
             <div class="text-center mt-12">
                 <button
                     class="bg-sereland-brown text-white px-10 py-4 uppercase text-xs font-bold tracking-widest hover:bg-sereland-brown-dark transition-all">View
-                    All Packages</button>
+                    All Curations</button>
             </div>
         </div>
     </section>
@@ -255,20 +291,30 @@
     </section>
 
     <!-- Founder Section -->
-    <section class="py-24 px-6 max-w-7xl mx-auto flex flex-col md:flex-row gap-16 items-center">
-        <div class="md:w-1/2 rounded-[2rem] overflow-hidden shadow-2xl">
-            <img src="https://images.unsplash.com/photo-1575550959106-5a7defe28b56?auto=format&fit=crop&q=80&w=1000"
-                class="w-full h-full object-cover aspect-square" alt="Founder & Nature">
+    <section class="py-24 px-6 max-w-7xl mx-auto flex flex-col md:flex-row gap-20 items-center">
+        <div class="md:w-1/2 rounded-[3rem] overflow-hidden shadow-2xl relative">
+            <img src="https://images.unsplash.com/photo-1549413204-6f02a4bf7718?auto=format&fit=crop&q=80&w=1000"
+                class="w-full h-full object-cover aspect-[4/5]" alt="Guardian of the Wild">
+            <div
+                class="absolute bottom-8 left-8 right-8 bg-white/10 backdrop-blur-md p-6 rounded-xl border border-white/20">
+                <p class="text-white text-sm font-medium italic">"The Savannah is our heritage; its conservation is our
+                    future."</p>
+            </div>
         </div>
         <div class="md:w-1/2">
-            <p class="text-xl font-serif italic text-gray-600 leading-relaxed mb-8">
-                "I founded Sereland Africa Safaris in 2021, inspired by my deep passion and love for Tanzania's nature
-                and culture. With a vision to redefine safari travel, I aim to create meaningful connections between
-                guests and the soul of this extraordinary land."
+            <h2 class="text-4xl font-serif mb-8 italic">The Visionary Behind the Lens</h2>
+            <p class="text-xl font-serif italic text-gray-600 leading-relaxed mb-10">
+                "Born from the red dust of the Savannah, Sereland was conceived as more than a travel company. It is a
+                testament to my lifelong devotion to the spirits of the wild. Our goal is to curate moments of profound
+                silence and heart-thumping awe, where the boundary between human and nature dissolves into eternal
+                memory."
             </p>
-            <div class="flex items-center gap-4">
-                <div class="h-px w-12 bg-sereland-brown"></div>
-                <span class="text-xs font-bold uppercase tracking-widest">Mark J. Peterson, Founder & CEO</span>
+            <div class="flex items-center gap-6">
+                <div class="h-px w-16 bg-sereland-brown"></div>
+                <div>
+                    <span class="block text-sm font-black uppercase tracking-[0.2em] mb-1">Elias Thorne</span>
+                    <span class="text-xs text-gray-400 font-bold uppercase tracking-widest">Architect of Safaris</span>
+                </div>
             </div>
         </div>
     </section>
@@ -276,58 +322,70 @@
     <!-- Iconic Destinations -->
     <section class="py-24 px-6 max-w-7xl mx-auto">
         <div class="text-center mb-16">
-            <h2 class="text-4xl font-serif mb-4 luxury-line">Iconic Destinations</h2>
-            <p class="text-sm text-gray-500 uppercase tracking-widest">Places that will take your breath away</p>
+            <h2 class="text-4xl font-serif mb-4 luxury-line">Venerated Landmarks</h2>
+            <p class="text-sm text-gray-500 uppercase tracking-widest">Wonders of the Southern Hemisphere</p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <!-- Dest 1 -->
-            <div class="group relative aspect-square overflow-hidden shadow-xl rounded-lg">
-                <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&q=80&w=800"
-                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                <div
-                    class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-6">
-                    <h4 class="text-white text-xl font-serif mb-2">Serengeti National Park</h4>
-                    <p
-                        class="text-white/70 text-xs leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity">
-                        The heart of the Great Migration and endless plains.</p>
+        <div class="swiper destinations-swiper pb-12">
+            <div class="swiper-wrapper">
+                <!-- Dest 1 -->
+                <div class="swiper-slide h-auto">
+                    <div class="group relative aspect-square overflow-hidden shadow-xl rounded-lg h-full">
+                        <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-6">
+                            <h4 class="text-white text-xl font-serif mb-2">Great Plains Haven</h4>
+                            <p
+                                class="text-white/70 text-xs leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity">
+                                The eternal stage of nature's most dramatic survival story.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dest 2 -->
+                <div class="swiper-slide h-auto">
+                    <div class="group relative aspect-square overflow-hidden shadow-xl rounded-lg h-full">
+                        <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-6">
+                            <h4 class="text-white text-xl font-serif mb-2">Enchanted Caldera</h4>
+                            <p
+                                class="text-white/70 text-xs leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity">
+                                A biosphere of extraordinary density and ancient beauty.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dest 3 -->
+                <div class="swiper-slide h-auto">
+                    <div class="group relative aspect-square overflow-hidden shadow-xl rounded-lg h-full">
+                        <img src="https://images.unsplash.com/photo-1516147413340-201633515082?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-6">
+                            <h4 class="text-white text-xl font-serif mb-2">Frost-Glittered Peak</h4>
+                            <p
+                                class="text-white/70 text-xs leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity">
+                                The colossal crown of Africa, touching the clouds.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dest 4 -->
+                <div class="swiper-slide h-auto">
+                    <div class="group relative aspect-square overflow-hidden shadow-xl rounded-lg h-full">
+                        <img src="https://images.unsplash.com/photo-1493246507139-91e0fad9978e?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-6">
+                            <h4 class="text-white text-xl font-serif mb-2">The Spice Archipelago</h4>
+                            <p
+                                class="text-white/70 text-xs leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity">
+                                Emerald waters meeting the white sands of legend.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- Dest 2 -->
-            <div class="group relative aspect-square overflow-hidden shadow-xl rounded-lg">
-                <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&q=80&w=800"
-                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                <div
-                    class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-6">
-                    <h4 class="text-white text-xl font-serif mb-2">Ngorongoro Crater</h4>
-                    <p
-                        class="text-white/70 text-xs leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity">
-                        A UNESCO World Heritage site and natural wonder.</p>
-                </div>
-            </div>
-            <!-- Dest 3 -->
-            <div class="group relative aspect-square overflow-hidden shadow-xl rounded-lg">
-                <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&q=80&w=800"
-                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                <div
-                    class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-6">
-                    <h4 class="text-white text-xl font-serif mb-2">Mount Kilimanjaro</h4>
-                    <p
-                        class="text-white/70 text-xs leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity">
-                        The Roof of Africa and a challenge for the soul.</p>
-                </div>
-            </div>
-            <!-- Dest 4 -->
-            <div class="group relative aspect-square overflow-hidden shadow-xl rounded-lg">
-                <img src="https://images.unsplash.com/photo-1493246507139-91e0fad9978e?auto=format&fit=crop&q=80&w=800"
-                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                <div
-                    class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-6">
-                    <h4 class="text-white text-xl font-serif mb-2">Zanzibar Island</h4>
-                    <p
-                        class="text-white/70 text-xs leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity">
-                        Pristine beaches and rich Swahili heritage.</p>
-                </div>
-            </div>
+            <!-- Pagination -->
+            <div class="swiper-pagination !-bottom-2"></div>
         </div>
         <div class="mt-12 text-center">
             <button
@@ -340,45 +398,49 @@
     <section class="py-24 bg-white px-6">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-serif mb-4 luxury-line">Why Sereland Africa Safaris</h2>
-                <p class="text-gray-500 uppercase tracking-widest text-sm">Our promises to you</p>
+                <h2 class="text-4xl font-serif mb-4 luxury-line">Our Ethos</h2>
+                <p class="text-gray-500 uppercase tracking-widest text-sm">The Pillars of the Sereland Experience</p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
                 <div class="text-center group">
                     <div
-                        class="size-16 mx-auto bg-sereland-light rounded-full flex items-center justify-center text-sereland-brown mb-6 group-hover:bg-sereland-brown group-hover:text-white transition-colors border border-sereland-brown">
-                        <span class="material-symbols-rounded text-3xl">lightbulb</span>
+                        class="size-20 mx-auto bg-sereland-light rounded-2xl flex items-center justify-center text-sereland-brown mb-8 group-hover:bg-sereland-brown group-hover:text-white transition-all duration-500 rotate-45 border border-sereland-brown/20 group-hover:rotate-0">
+                        <span
+                            class="material-symbols-rounded text-3xl -rotate-45 group-hover:rotate-0 transition-transform duration-500">auto_awesome</span>
                     </div>
-                    <h4 class="font-bold text-sm uppercase tracking-widest mb-4">Our Knowledge</h4>
-                    <p class="text-sm text-gray-500 leading-relaxed">Deep local expertise and years of on-the-ground
-                        experience.</p>
+                    <h4 class="font-bold text-sm uppercase tracking-[0.2em] mb-4">Primal Intuition</h4>
+                    <p class="text-sm text-gray-500 leading-relaxed">Our guides possess an ancestral understanding of
+                        the land, tracking the pulse of the wild with unerring precision.</p>
                 </div>
                 <div class="text-center group">
                     <div
-                        class="size-16 mx-auto bg-sereland-light rounded-full flex items-center justify-center text-sereland-brown mb-6 group-hover:bg-sereland-brown group-hover:text-white transition-colors border border-sereland-brown">
-                        <span class="material-symbols-rounded text-3xl">hub</span>
+                        class="size-20 mx-auto bg-sereland-light rounded-2xl flex items-center justify-center text-sereland-brown mb-8 group-hover:bg-sereland-brown group-hover:text-white transition-all duration-500 rotate-45 border border-sereland-brown/20 group-hover:rotate-0">
+                        <span
+                            class="material-symbols-rounded text-3xl -rotate-45 group-hover:rotate-0 transition-transform duration-500">diamond</span>
                     </div>
-                    <h4 class="font-bold text-sm uppercase tracking-widest mb-4">We Create Connections</h4>
-                    <p class="text-sm text-gray-500 leading-relaxed">Meaningful interactions with local communities and
-                        nature.</p>
+                    <h4 class="font-bold text-sm uppercase tracking-[0.2em] mb-4">Unfiltered Luxury</h4>
+                    <p class="text-sm text-gray-500 leading-relaxed">We redefine prestige by offering intimate,
+                        sophisticated sanctuaries in the heart of the most remote territories.</p>
                 </div>
                 <div class="text-center group">
                     <div
-                        class="size-16 mx-auto bg-sereland-light rounded-full flex items-center justify-center text-sereland-brown mb-6 group-hover:bg-sereland-brown group-hover:text-white transition-colors border border-sereland-brown">
-                        <span class="material-symbols-rounded text-3xl">support_agent</span>
+                        class="size-20 mx-auto bg-sereland-light rounded-2xl flex items-center justify-center text-sereland-brown mb-8 group-hover:bg-sereland-brown group-hover:text-white transition-all duration-500 rotate-45 border border-sereland-brown/20 group-hover:rotate-0">
+                        <span
+                            class="material-symbols-rounded text-3xl -rotate-45 group-hover:rotate-0 transition-transform duration-500">camera_outdoor</span>
                     </div>
-                    <h4 class="font-bold text-sm uppercase tracking-widest mb-4">Always By Your Side</h4>
-                    <p class="text-sm text-gray-500 leading-relaxed">24/7 dedicated support before, during, and after
-                        your trip.</p>
+                    <h4 class="font-bold text-sm uppercase tracking-[0.2em] mb-4">Silent Guardian</h4>
+                    <p class="text-sm text-gray-500 leading-relaxed">Our presence is whisper-light. We operate with a
+                        deep commitment to preserving the sanctity of every habitat we visit.</p>
                 </div>
                 <div class="text-center group">
                     <div
-                        class="size-16 mx-auto bg-sereland-light rounded-full flex items-center justify-center text-sereland-brown mb-6 group-hover:bg-sereland-brown group-hover:text-white transition-colors border border-sereland-brown">
-                        <span class="material-symbols-rounded text-3xl">eco</span>
+                        class="size-20 mx-auto bg-sereland-light rounded-2xl flex items-center justify-center text-sereland-brown mb-8 group-hover:bg-sereland-brown group-hover:text-white transition-all duration-500 rotate-45 border border-sereland-brown/20 group-hover:rotate-0">
+                        <span
+                            class="material-symbols-rounded text-3xl -rotate-45 group-hover:rotate-0 transition-transform duration-500">volunteer_activism</span>
                     </div>
-                    <h4 class="font-bold text-sm uppercase tracking-widest mb-4">Sustainable Travel</h4>
-                    <p class="text-sm text-gray-500 leading-relaxed">Responsible tourism that gives back to people and
-                        planet.</p>
+                    <h4 class="font-bold text-sm uppercase tracking-[0.2em] mb-4">Legacy Bound</h4>
+                    <p class="text-sm text-gray-500 leading-relaxed">Every expedition contributes directly to the
+                        empowerment of the communities and ecosystems that sustain us.</p>
                 </div>
             </div>
         </div>
@@ -388,50 +450,141 @@
     <section class="py-24 bg-sereland-dark text-white px-6">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-serif mb-4 luxury-line">What Our Guests Say</h2>
+                <h2 class="text-4xl font-serif mb-4 luxury-line">Voices of the Wild</h2>
+                <p class="text-sereland-brown text-sm uppercase tracking-widest">Chronicles of our most cherished guests
+                </p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <div class="bg-white/5 p-10 rounded-2xl border border-white/10">
-                    <div class="flex gap-1 text-sereland-brown mb-6">
-                        <span class="material-symbols-rounded filled">star</span>
-                        <span class="material-symbols-rounded filled">star</span>
-                        <span class="material-symbols-rounded filled">star</span>
-                        <span class="material-symbols-rounded filled">star</span>
-                        <span class="material-symbols-rounded filled">star</span>
+
+            <div class="swiper testimonials-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Testimonial 1 -->
+                    <div class="swiper-slide h-auto">
+                        <div
+                            class="bg-white/5 p-12 rounded-2xl border border-white/10 h-full flex flex-col justify-between">
+                            <div>
+                                <div class="flex gap-1 text-sereland-brown mb-8">
+                                    <span class="material-symbols-rounded filled">star</span>
+                                    <span class="material-symbols-rounded filled">star</span>
+                                    <span class="material-symbols-rounded filled">star</span>
+                                    <span class="material-symbols-rounded filled">star</span>
+                                    <span class="material-symbols-rounded filled">star</span>
+                                </div>
+                                <p class="text-xl md:text-2xl font-serif italic mb-10 leading-relaxed">"An unparalleled
+                                    immersion into nature. Sereland orchestrated a journey that was as spiritually
+                                    moving as it was visually spectacular. We felt truly at home in the wild."</p>
+                            </div>
+                            <div class="flex items-center gap-6">
+                                <img src="https://i.pravatar.cc/100?u=a"
+                                    class="size-16 rounded-full border-2 border-sereland-brown/30 p-1">
+                                <div>
+                                    <span class="block font-bold text-lg">The Alistair Family</span>
+                                    <span class="text-xs text-gray-400 font-bold tracking-widest uppercase">London,
+                                        UK</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <p class="text-lg italic mb-8">"Sereland provided us with the most incredible safari experience.
-                        Everything from the logistics to the lodges was perfect. Our guide was exceptionally
-                        knowledgeable."</p>
-                    <div class="flex items-center gap-4">
-                        <img src="https://i.pravatar.cc/100?u=a" class="size-12 rounded-full">
-                        <div>
-                            <span class="block font-bold">James & Emily</span>
-                            <span class="text-xs text-gray-400 capitalize">United States</span>
+                    <!-- Testimonial 2 -->
+                    <div class="swiper-slide h-auto">
+                        <div
+                            class="bg-white/5 p-12 rounded-2xl border border-white/10 h-full flex flex-col justify-between">
+                            <div>
+                                <div class="flex gap-1 text-sereland-brown mb-8">
+                                    <span class="material-symbols-rounded filled">star</span>
+                                    <span class="material-symbols-rounded filled">star</span>
+                                    <span class="material-symbols-rounded filled">star</span>
+                                    <span class="material-symbols-rounded filled">star</span>
+                                    <span class="material-symbols-rounded filled">star</span>
+                                </div>
+                                <p class="text-xl md:text-2xl font-serif italic mb-10 leading-relaxed">"Reaching the
+                                    summit of Kilimanjaro with Sereland was a masterclass in safety and support. Every
+                                    detail was curated with immense care and professionalism."</p>
+                            </div>
+                            <div class="flex items-center gap-6">
+                                <img src="https://i.pravatar.cc/100?u=b"
+                                    class="size-16 rounded-full border-2 border-sereland-brown/30 p-1">
+                                <div>
+                                    <span class="block font-bold text-lg">Dr. Marcus Vance</span>
+                                    <span class="text-xs text-gray-400 font-bold tracking-widest uppercase">San
+                                        Francisco, USA</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="bg-white/5 p-10 rounded-2xl border border-white/10">
-                    <div class="flex gap-1 text-sereland-brown mb-6">
-                        <span class="material-symbols-rounded filled">star</span>
-                        <span class="material-symbols-rounded filled">star</span>
-                        <span class="material-symbols-rounded filled">star</span>
-                        <span class="material-symbols-rounded filled">star</span>
-                        <span class="material-symbols-rounded filled">star</span>
-                    </div>
-                    <p class="text-lg italic mb-8">"Climbing Kilimanjaro with Sereland was a life-changing event. The
-                        safety protocols and the support from the porters and guides made reaching Uhuru Peak possible."
-                    </p>
-                    <div class="flex items-center gap-4">
-                        <img src="https://i.pravatar.cc/100?u=b" class="size-12 rounded-full">
-                        <div>
-                            <span class="block font-bold">David Thompson</span>
-                            <span class="text-xs text-gray-400 capitalize">Australia</span>
-                        </div>
-                    </div>
-                </div>
+                <!-- Pagination -->
+                <div class="swiper-pagination !-bottom-2 !static mt-12"></div>
             </div>
         </div>
     </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        // Tour Types Swiper (Manual)
+        const swiperTypes = new Swiper('.types-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            navigation: {
+                nextEl: '.types-next',
+                prevEl: '.types-prev',
+            },
+            breakpoints: {
+                640: { slidesPerView: 2 },
+                1024: { slidesPerView: 4 }
+            }
+        });
+
+        // Featured Packages Swiper (Auto 2s)
+        const swiperPackages = new Swiper('.packages-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 }
+            }
+        });
+
+        // Iconic Destinations Swiper (Auto 2s)
+        const swiperDests = new Swiper('.destinations-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 24,
+            loop: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                640: { slidesPerView: 2 },
+                1024: { slidesPerView: 4 }
+            }
+        });
+
+        // Testimonials Swiper (Auto 2s)
+        const swiperTestimonials = new Swiper('.testimonials-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 40,
+            loop: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            }
+        });
+    </script>
 
     <!-- Footer -->
     <footer class="py-24 bg-white px-6">
